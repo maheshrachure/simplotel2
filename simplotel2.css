@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    width: 100%;
+    font-family: "Roboto";
+
+}
+
+.topnavBar {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding-left: 40px;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.topnavBar li {
+    color: black;
+    font-size: 16px;
+    list-style: none;
+    font-weight: 650;
+    font-family: "bree-serif";
+}
+
+.topnavBar li:hover {
+    color: red;
+    height: auto;
+    cursor: pointer;
+
+}
+
+.nav-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.nav-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://res.cloudinary.com/dnyk5k0ut/image/upload/v1721877461/img1_j7x44i.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.content-box {
+    position: absolute;
+    top: 33%;
+    left: 5%;
+    width: 40vw;
+    padding: 10px 20px 10px 20px;
+    background-color: rgba(239, 22, 37, 0.323);
+    color: white;
+}
+
+@media all and (max-width:576px) {
+    .content-box {
+        position: absolute;
+        top: 13%;
+        left: 2%;
+        width: 50vw;
+        padding: 10px 20px 10px 20px;
+        background-color: rgba(239, 22, 37, 0.323);
+        color: white;
+    }
+
+}
+
+.content-box h4 {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.content-box p {
+
+    font-weight: 500;
+}
+
+.bottom-container {
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    background-image: linear-gradient(110deg, rgb(236, 149, 193), rgb(233, 152, 81), rgb(233, 206, 57));
+    bottom: 0;
+}
+
+.order {
+    padding-top: 50px;
+    width: 100%;
+    height: 100vh auto;
+    background-image: linear-gradient(110deg, rgb(218, 117, 167), rgb(233, 152, 81), rgb(233, 206, 57));
+}
+
+.order h1 {
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    letter-spacing: 0.5rem;
+    font-size: 35px;
+
+
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+
+}
+
+.burger,
+.pizza,
+.pasta {
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    font-family: "Roboto";
+    padding: 15px 5px 15px 5px;
+    border-radius: 0 50px 0 50px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.burger img {
+    width: 250px;
+    height: 250px;
+    border-radius: 0 50px 0 0;
+}
+
+.pizza img {
+    width: 250px;
+    height: 250px;
+    border-radius: 0 50px 0 0;
+}
+
+.pasta img {
+    width: 250px;
+    height: 250px;
+    border-radius: 0 50px 0 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button {
+    background-color: rgb(250, 206, 215);
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 100px;
+    color: black;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .topnavBar {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .topnavBar li {
+        font-size: 12px;
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .topnavBar li {
+        font-size: 10px;
+
+    }
+
+    .navbar-icons img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .navbar-icons img {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .topnavBar li {
+        font-size: 8px;
+
+    }
+
+    .navbar-icons img {
+        width: 8px;
+        height: 8px;
+    }
+
+    .navbar-icons {
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .topnavBar li {
+        font-size: 6px;
+
+    }
+}
